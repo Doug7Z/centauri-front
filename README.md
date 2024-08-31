@@ -1,1 +1,1 @@
-# centuari-frontend
+# centauri-front
