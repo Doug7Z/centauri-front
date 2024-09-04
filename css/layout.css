@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap'); /*FONTE DO FIGMA*/
+
+html{
+width: 1280px;
+height: 2794px;
+}
+body{
+  background-color: #000228;
+
+}
+
+
+/********************************Cabeçalho**************************************************************/
+.navbar{
+  width: 1280px;
+  height: 71px;
+  background-color: #0000006E;
+
+  font-family: "Space Grotesk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+ 
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  background-color: #555; /* Cor de fundo ao passar o mouse */
+  border-radius: 4px;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-search input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.navbar-search button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.navbar-search button:hover {
+  background-color: #555;
+}
+
+
+/****************************************************************************************************/
+
+.fundoConteiner{
+  width: 1280px; 
+  height: 972px;
+  background-color: antiquewhite;
+}
+
+.fundoEstrela{
+  background-image: url(/centauri-front/images/Estrelas.gif);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 972px;
+
+}
+.conteinerPlanets{
+  width: 100%;
+  position: relative
+
+}
+
+.conteinerPlanets img {
+  position: absolute; 
+  
+}
+.planeta4{
+  width: 400px;
+  height: 400px;
+  margin-left: -169px;
+  margin-top: 77px;
+}
+.planeta1{
+  width: 87px;
+  height: 87px;
+  margin-left: 389px;
+  margin-top: 122px;
+}
+.planeta3{
+width: 260px;
+height: 260px;
+margin-left: 1049px;
+margin-top: 156px;
+}
+.planeta2{
+width: 177px;
+height: 177px;
+margin-top: 477px;
+margin-left: 124px;
+}
+.planeta6{
+width: 110px;
+height: 110px;
+margin-top: 544px;
+margin-left: 904px;
+
+}
+
+
+.conteinerPlanets p {
+  position: absolute; 
+  
+}
+.titulo1{ 
+  margin-top: 286px;
+  margin-left: 389px;
+  /*font-size: 116.38px;*/ /*Tamanho da fonte no FIGMA*/
+  /*line-height: 148.5px;*/ 
+  font-size: 80.38px; /*Testando fontes e tamanhos diferentes*/
+  text-align: Center;
+  color: #CD1CFE;
+
+
+/*fontes diferentes para teste*/
+/*
+  font-family: "Fondamento", cursive;
+  font-weight: 400;
+  font-style: normal;
+  */
+
+  /*
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  */
+
+  
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  
+
+
+}
+
+.texto1{
+  /*Essa é a fonte do figma*/
+  font-family: "Space Grotesk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
+  font-size: 48px;
+  line-height: 61.25px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 416px;
+  margin-left: 389px;
+
+}
+
+.texto2{
+  font-family: "Space Grotesk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16.88px;
+  line-height: 21.53px;
+  text-align: center;
+  color: #FFFFFF;
+
+  width: 420px;
+  height: 77.19px;
+
+  margin-top: 538px;
+  margin-left: 429px;
+}
+
+
+/***************************************Os cards**********************************************/
+.card-conteiner{
+
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  flex-wrap: wrap; /* cards podem se mover pra outra linha caso não haja espaço */
+  gap: 70px;
+
+}
+
+.card {
+  height: 450px;
+  width: 300px;
+  border-radius: 14px;
+  background-color: red;
+  display: flex;
+  flex-direction: column; 
+  overflow: hidden; 
+}
+
+.card img {
+  width: 100%;
+  height: 90%; 
+  object-fit: cover; 
+}
+
+.card-rodape-conteiner {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px; 
+  background-color: rgb(3, 129, 45); /* Cor pra saber onde é o rodapé */
+  border-top: 1px solid #ddd; /* linha separando a imagem do rodapé */
+}
+
+.card-nomeUsuario {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.card-rodape-conteiner button {
+  border: none;
+  background: transparent; 
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.card-rodape-conteiner button i {
+  font-style: normal; 
+}
